@@ -1,0 +1,21 @@
+%p.notice= notice
+
+%p
+	%b Label:
+	= @todo.label
+	
+%p
+	%b Details:
+	= @todo.details
+
+%p
+	%b Tag:
+	= @todo.tag
+	
+%p
+	%b Status:
+	= @todo.status
+	
+= link_to "Edit", edit_todo_path @todo
+|
+= link_to "Back", todos_path

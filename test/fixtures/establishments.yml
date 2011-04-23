@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  locale: MyString
+  city: MyString
+  wardrobe_fee: 1
+  entrance_fee: 1
+  entrance_fee_start: 2010-06-21 22:32:16
+  comment: MyText
+  age_limit: 1
+  category: 
+
+two:
+  name: MyString
+  locale: MyString
+  city: MyString
+  wardrobe_fee: 1
+  entrance_fee: 1
+  entrance_fee_start: 2010-06-21 22:32:16
+  comment: MyText
+  age_limit: 1
+  category: 

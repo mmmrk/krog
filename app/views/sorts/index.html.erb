@@ -1,0 +1,23 @@
+<h1>Listing sorts</h1>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+
+<% @sorts.each do |sort| %>
+	<tr>
+		<td><%= sort.name %></td>
+		<td><%= link_to 'Show', sort %></td>
+		<td><%= link_to 'Edit', edit_sort_path(sort) %></td>
+		<td><%= link_to 'Destroy', sort, :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sort', new_sort_path %>

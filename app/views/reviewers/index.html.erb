@@ -1,0 +1,25 @@
+<h1>Listing reviewers</h1>
+
+<table>
+	<tr>
+		<th>Person</th>
+		<th>Review</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+
+<% @reviewers.each do |reviewer| %>
+	<tr>
+		<td><%= reviewer.person %></td>
+		<td><%= reviewer.review %></td>
+		<td><%= link_to 'Show', reviewer %></td>
+		<td><%= link_to 'Edit', edit_reviewer_path(reviewer) %></td>
+		<td><%= link_to 'Destroy', reviewer, :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reviewer', new_reviewer_path %>

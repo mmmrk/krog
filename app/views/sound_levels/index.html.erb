@@ -1,0 +1,23 @@
+<h1>Listing sound_levels</h1>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+
+<% @sound_levels.each do |sound_level| %>
+	<tr>
+		<td><%= sound_level.name %></td>
+		<td><%= link_to 'Show', sound_level %></td>
+		<td><%= link_to 'Edit', edit_sound_level_path(sound_level) %></td>
+		<td><%= link_to 'Destroy', sound_level, :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sound level', new_sound_level_path %>

@@ -1,0 +1,23 @@
+<h1>Listing clienteles</h1>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+
+<% @clienteles.each do |clientele| %>
+	<tr>
+		<td><%= clientele.name %></td>
+		<td><%= link_to 'Show', clientele %></td>
+		<td><%= link_to 'Edit', edit_clientele_path(clientele) %></td>
+		<td><%= link_to 'Destroy', clientele, :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Clientele', new_clientele_path %>

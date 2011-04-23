@@ -1,0 +1,77 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+	<b>Name:</b>
+	<%= @establishment.name %>
+</p>
+
+<p>
+	<b>Locale:</b>
+	<%= @establishment.locale %>
+</p>
+
+<p>
+	<b>City:</b>
+	<%= @establishment.city %>
+</p>
+
+<p>
+	<b>Age limit:</b>
+	<%= @establishment.age_limit %>
+</p>
+
+<p>
+	<b>Category:</b>
+	<%= link_to @establishment.category.name, @establishment.category %>
+</p>
+
+<p>
+	<b>Rating:</b>
+	<%= @establishment.average_rating %>
+</p>
+
+<p>
+	<b>Bottled Beer:</b>
+	<%= @establishment.bottled_beer.name %>
+</p>
+
+<p>
+	<b>Tapped Beer:</b>
+	<%= @establishment.tapped_beer.name %>
+</p>
+
+<p>
+	<b>Opening Hours:</b>
+	<%= @establishment.opening_hour.to_day %>
+</p>
+
+<p>
+	<b>Closing Hours:</b>
+	<%= @establishment.closing_hour.to_day %>
+</p>
+
+<p>
+	<b>Wardrobe fee:</b>
+	<%= @establishment.wardrobe_fee %>
+</p>
+
+<p>
+	<b>Entrance fee:</b>
+	<%= @establishment.entrance_fee %>
+</p>
+
+<p>
+	<b>Entrance fee start:</b>
+	<%= @establishment.entrance_fee_start %>
+</p>
+
+<p>
+	<b>Comment:</b>
+	<%= @establishment.comment %>
+</p>
+
+<%= link_to 'Edit', edit_establishment_path(@establishment) %> |
+<%= link_to 'Back', establishments_path %> |
+<%= link_to 'New Review', new_review_path %>
+
+<%= render 'reviews/list' %>

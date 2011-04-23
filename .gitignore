@@ -1,0 +1,12 @@
+syntax: glob
+
+.DS_Store
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+config/initializers/secret_token.rb
+config/initializers/session_store.rb
+config/database.yml
+config/deploy.rb
+config/deploy
