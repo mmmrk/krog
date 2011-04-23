@@ -1,0 +1,28 @@
+.advanced_fields
+	=form.label "Monday" 
+	=form.time_select :monday, { :minute_step => 30, :ignore_date => true }, :class => cls + "_weekday" 
+	%br
+	
+	=form.label "Tuesday" 
+	=form.time_select :tuesday, { :minute_step => 30, :ignore_date => true }, :class => cls + "_weekday" 
+	%br
+	
+	=form.label "Wednesday" 
+	=form.time_select :wednesday, { :minute_step => 30, :ignore_date => true }, :class => cls + "_weekday" 
+	%br
+	
+	=form.label "Thursday" 
+	=form.time_select :thursday, { :minute_step => 30, :ignore_date => true }, :class => cls + "_weekday" 
+	%br
+	
+	=form.label "Friday" 
+	=form.time_select :friday, { :minute_step => 30, :ignore_date => true }, :class => cls + "_weekend" 
+	%br
+	
+	
+	=form.label "Saturday" 
+	=form.time_select :saturday, { :minute_step => 30, :ignore_date => true }, :class => cls + "_weekend" 
+	%br
+	
+	=form.label "Sunday" 
+	=form.time_select :sunday, { :minute_step => 30, :ignore_date => true }, :class => cls + "_weekday"

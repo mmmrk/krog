@@ -1,0 +1,35 @@
+%table.tableListing
+	%tr
+		%th Name
+		%th Locale
+		%th City
+		%th Age limit
+		%th Category
+		%th Rating
+		%th Bottled Beer
+		%th Tapped Beer
+		%th Wardrobe fee
+		%th Entrance fee
+		%th Entrance fee start
+		%th Comment
+		%th
+		%th
+		%th
+
+- @establishments.each do |establishment| 
+	%tr
+		%td= establishment.name 
+		%td= establishment.locale 
+		%td= establishment.city 
+		%td= establishment.age_limit 
+		%td= establishment.category.name 
+		%td= establishment.average_rating 
+		%td= establishment.bottled_beer.name 
+		%td= establishment.tapped_beer.name 
+		%td= establishment.wardrobe_fee 
+		%td= establishment.entrance_fee 
+		%td= establishment.entrance_fee_start 
+		%td= establishment.comment 
+		%td= link_to 'Show', establishment 
+		%td= link_to 'Edit', edit_establishment_path(establishment) 
+		%td= link_to 'Destroy', establishment, :confirm => 'Are you sure?', :method => :delete 
