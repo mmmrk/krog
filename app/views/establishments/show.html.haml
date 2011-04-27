@@ -1,0 +1,63 @@
+%p#notice= notice
+
+%p
+	%b Name:
+	= @establishment.name 
+
+%p
+	%b Locale:
+	= @establishment.locale 
+
+%p
+	%b City:
+	= @establishment.city 
+
+%p
+	%b Age limit:
+	= @establishment.age_limit 
+
+%p
+	%b Category:
+	= link_to @establishment.category.name, @establishment.category 
+
+%p
+	%b Rating:
+	= @establishment.average_rating 
+
+%p
+	%b Bottled Beer:
+	= @establishment.bottled_beer.name 
+
+%p
+	%b Tapped Beer:
+	= @establishment.tapped_beer.name 
+
+%p
+	%b Opening Hours:
+	= @establishment.opening_hour.to_day 
+
+%p
+	%b Closing Hours:
+	= @establishment.closing_hour.to_day 
+
+%p
+	%b Wardrobe fee:
+	= @establishment.wardrobe_fee 
+
+%p
+	%b Entrance fee:
+	= @establishment.entrance_fee 
+
+%p
+	%b Entrance fee start:
+	= @establishment.entrance_fee_start 
+
+%p
+	%b Comment:
+	= @establishment.comment 
+
+= link_to 'Edit', edit_establishment_path(@establishment)  |
+= link_to 'Back', establishments_path  |
+= link_to 'New Review', new_review_path 
+
+= render 'reviews/list' 
