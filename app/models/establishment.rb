@@ -18,6 +18,7 @@ class Establishment < ActiveRecord::Base
 		value[:age_limit]
 		value[:locale]
 		value[:city]
+	end
 
 	def average_rating
 		reviews.joins(:rating).average('ratings.value')
