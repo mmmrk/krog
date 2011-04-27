@@ -1,0 +1,17 @@
+%p#notice= notice
+
+%p
+	%b Name:
+	= @beer.name
+
+%p
+	%b Sort:
+	= @beer.sort.name
+
+%p
+	%b Country:
+	= @beer.country.name
+
+= link_to "Edit", edit_beer_path(@beer)
+|
+= link_to "Back", beers_path
