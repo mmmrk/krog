@@ -1,0 +1,28 @@
+%table
+	%thead
+		%tr
+			%th Rating
+			%th Visit Date
+			%th Comment
+			%th Name
+			%th Category
+			%th Clientele
+			%th Sound Level
+			%th Hygiene
+			%th
+			%th
+			%th
+	%tbody
+		- @reviews.each do |review|
+			%tr
+				%td= review.rating.value
+				%td= review.visit_date
+				%td= review.comment
+				%td= review.establishment.name
+				%td= review.category.name
+				%td= review.clientele.name
+				%td= review.sound_level.name
+				%td= review.hygiene.name
+				%td= link_to 'Show', review
+				%td= link_to 'Edit', edit_review_path(review)
+				%td= link_to 'Destroy', review, :confirm => 'Are you sure?', :method => :delete

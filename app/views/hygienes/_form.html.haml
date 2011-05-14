@@ -1,0 +1,15 @@
+﻿= form_for(@hygiene) do |f|
+	- if @hygiene.errors.any?
+		#error_explanation
+			%h2 #{ pluralize(@hygiene.errors.count, "error") } prohibited this hygiene from being saved:
+			%ul
+				- @hygiene.errors.full_messages.each do |msg|
+					%li= msg
+
+	.field
+		= f.label :name
+		%br
+		= f.text_field :name
+
+	.actions
+		= f.submit

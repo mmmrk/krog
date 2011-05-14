@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+	%b Name:
+	= @sort.name
+
+= link_to 'Edit', edit_sort_path(@sort)
+|
+= link_to 'Back', sorts_path

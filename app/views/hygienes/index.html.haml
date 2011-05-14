@@ -1,0 +1,19 @@
+﻿%h1 Listing hygienes
+
+%table
+	%tr
+		%th Name
+		%th
+		%th
+		%th
+
+- @hygienes.each do |hygiene|
+	%tr
+		%td= hygiene.name
+		%td= link_to 'Show', hygiene
+		%td= link_to 'Edit', edit_hygiene_path(hygiene)
+		%td= link_to 'Destroy', hygiene, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Hygiene', new_hygiene_path

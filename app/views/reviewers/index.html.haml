@@ -1,0 +1,21 @@
+%h1 Listing reviewers
+
+%table
+	%tr
+		%th Person
+		%th Review
+		%th
+		%th
+		%th
+
+- @reviewers.each do |reviewer|
+	%tr
+		%td= reviewer.person
+		%td= reviewer.review
+		%td= link_to 'Show', reviewer
+		%td= link_to 'Edit', edit_reviewer_path(reviewer)
+		%td= link_to 'Destroy', reviewer, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Reviewer', new_reviewer_path

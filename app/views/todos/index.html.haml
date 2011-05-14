@@ -9,17 +9,17 @@
 		%th
 		%th
 		%th
-	
+
 	- @todos.each do |todo|
 		%tr
 			%td= todo.label
 			%td= todo.details
 			%td= todo.tag
 			%td= todo.status
-			%td= link_to "Show", todo
-			%td= link_to "Edit", edit_todo_path (todo)
+			%td= link_to 'Show', todo
+			%td= link_to "Edit", edit_todo_path(todo)
 			%td= link_to "Details", todo, :confirm => 'Are you sure?', :method => :delete
-			
+
 %br
 
 = link_to "New Todo", new_todo_path

@@ -1,0 +1,31 @@
+%h1 Listing hours
+
+%table
+	%tr
+		%th Monday
+		%th Tuesday
+		%th Wednseday
+		%th Thursday
+		%th Friday
+		%th Saturday
+		%th Sunday
+		%th
+		%th
+		%th
+
+- @hours.each do |hour|
+	%tr
+		%td= hour.monday
+		%td= hour.tuesday
+		%td= hour.wednseday
+		%td= hour.thursday
+		%td= hour.friday
+		%td= hour.saturday
+		%td= hour.sunday
+		%td= link_to 'Show', hour
+		%td= link_to 'Edit', edit_hour_path(hour)
+		%td= link_to 'Destroy', hour, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Hour', new_hour_path

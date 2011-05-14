@@ -1,0 +1,45 @@
+= form_for(@hour) do |f|
+	- if @hour.errors.any?
+		#error_explanation
+			%h2 #{ pluralize(@hour.errors.count, "error") } prohibited this hour from being saved:
+			%ul
+			- @hour.errors.full_messages.each do |msg|
+				%li= msg
+
+	.field
+		= f.label :monday
+		%br
+		= f.time_select :monday
+
+	.field
+		= f.label :tuesday
+		%br
+		= f.time_select :tuesday
+
+	.field
+		= f.label :wednseday
+		%br
+		= f.time_select :wednseday
+
+	.field
+		= f.label :thursday
+		%br
+		= f.time_select :thursday
+
+	.field
+		= f.label :friday
+		%br
+		= f.time_select :friday
+
+	.field
+		= f.label :saturday
+		%br
+		= f.time_select :saturday
+
+	.field
+		= f.label :sunday
+		%br
+		= f.time_select :sunday
+
+	.actions
+		= f.submit

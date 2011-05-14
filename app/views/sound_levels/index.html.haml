@@ -1,0 +1,19 @@
+%h1 Listing sound_levels
+
+%table
+	%tr
+		%th Name
+		%th
+		%th
+		%th
+	
+- @sound_levels.each do |sound_level|
+	%tr
+		%td= sound_level.name
+		%td= link_to 'Show', sound_level
+		%td= link_to 'Edit', edit_sound_level_path(sound_level)
+		%td= link_to 'Destroy', sound_level, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Sound level', new_sound_level_path
