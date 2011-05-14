@@ -1,4 +1,4 @@
-Krog::Application.routes.draw do |map|
+Krog::Application.routes.draw do
 	resources :todos
 
 	resources :countries

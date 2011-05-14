@@ -1,15 +1,20 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0.beta4'
+gem 'rails', '3.1.0.beta1'
 
 # Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+# gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
-gem "haml"
-gem 'barista', '= 0.5.0'
-gem "ruby-mysql"
-gem "ruby-debug"
+gem 'sqlite3'
+
+# Asset template engines
+gem 'sass'
+gem 'coffee-script'
+gem 'uglifier'
+
+gem 'haml'
+
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -18,16 +23,9 @@ gem "ruby-debug"
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug'
+# gem 'ruby-debug19', :require => 'ruby-debug'
 
-# Bundle the extra gems:
-# gem 'bj'
-# gem 'nokogiri', '1.4.1'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
-
-# Bundle gems for certain environments:
-# gem 'rspec', :group => :test
-# group :test do
-#   gem 'webrat'
-# end
+group :test do
+  # Pretty printed test output
+  gem 'turn', :require => false
+end
