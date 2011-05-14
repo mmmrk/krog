@@ -11,11 +11,11 @@
 
 - @beers.each do |beer|
 	%tr 
-		%td = beer.name
-		%td = beer.sort.name
-		%td = beer.country.name
-		%td = link_to 'Show', beer
-		%td = link_to 'Edit', edit_beer_path(beer)
-		%td = link_to 'Destroy', beer, :confirm => 'Are you sure?', :method => :delete
+		%td= beer.name
+		%td= beer.sort.name
+		%td= beer.country.name
+		%td= link_to 'Show', beer
+		%td= link_to 'Edit', edit_beer_path(beer)
+		%td= link_to 'Destroy', beer, :confirm => 'Are you sure?', :method => :delete
 %br
 = link_to 'New Beer', new_beer_path
