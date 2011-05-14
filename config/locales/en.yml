@@ -3,266 +3,266 @@
 # Use this as the base for the locale file of your language.
 
 "en-US":
-	date:
-		formats:
-			default: "%Y-%m-%d"
-			short: "%b %d"
-			long: "%B %d, %Y"
+    date:
+        formats:
+            default: "%Y-%m-%d"
+            short: "%b %d"
+            long: "%B %d, %Y"
 
-		day_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
-		abbr_day_names: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
+        day_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+        abbr_day_names: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
 
-		month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
-		abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
-		order:
-			- :year
-			- :month
-			- :day
+        month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
+        abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+        order:
+            - :year
+            - :month
+            - :day
 
-	time:
-		formats:
-			default: "%a, %d %b %Y %H:%M:%S %z"
-			short: "%d %b %H:%M"
-			long: "%B %d, %Y %H:%M"
-		am: "am"
-		pm: "pm"
+    time:
+        formats:
+            default: "%a, %d %b %Y %H:%M:%S %z"
+            short: "%d %b %H:%M"
+            long: "%B %d, %Y %H:%M"
+        am: "am"
+        pm: "pm"
 
-	support:
-		array:
-			words_connector: ", "
-			two_words_connector: " and "
-			last_word_connector: ", and "
+    support:
+        array:
+            words_connector: ", "
+            two_words_connector: " and "
+            last_word_connector: ", and "
 
-		select:
-			prompt: "Please select"
+        select:
+            prompt: "Please select"
 
-	number:
-		format:
-			separator: "."
-			delimiter: ","
-			precision: 3
-			significant: false
-			strip_insignificant_zeros: false
+    number:
+        format:
+            separator: "."
+            delimiter: ","
+            precision: 3
+            significant: false
+            strip_insignificant_zeros: false
 
-		currency:
-			format:
-				format: "%u%n"
-				unit: "$"
-				separator: "."
-				delimiter: ","
-				precision: 2
-				significant: false
-				strip_insignificant_zeros: false
+        currency:
+            format:
+                format: "%u%n"
+                unit: "$"
+                separator: "."
+                delimiter: ","
+                precision: 2
+                significant: false
+                strip_insignificant_zeros: false
 
-		percentage:
-			format:
-				delimiter: ""
+        percentage:
+            format:
+                delimiter: ""
 
-		precision:
-			format:
-				delimiter: ""
+        precision:
+            format:
+                delimiter: ""
 
-		human:
-			format:
-				delimiter: ""
-				precision: 3
-				significant: true
-				strip_insignificant_zeros: true
-			storage_units:
-				format: "%n %u"
-				units:
-					byte:
-						one: "Byte"
-						other: "Bytes"
-					kb: "KB"
-					mb: "MB"
-					gb: "GB"
-					tb: "TB"
-			decimal_units:
-				format: "%n %u"
-				units:
-					unit: ""
-					thousand: Thousand
-					million: Million
-					billion: Billion
-					trillion: Trillion
-					quadrillion: Quadrillion
+        human:
+            format:
+                delimiter: ""
+                precision: 3
+                significant: true
+                strip_insignificant_zeros: true
+            storage_units:
+                format: "%n %u"
+                units:
+                    byte:
+                        one: "Byte"
+                        other: "Bytes"
+                    kb: "KB"
+                    mb: "MB"
+                    gb: "GB"
+                    tb: "TB"
+            decimal_units:
+                format: "%n %u"
+                units:
+                    unit: ""
+                    thousand: Thousand
+                    million: Million
+                    billion: Billion
+                    trillion: Trillion
+                    quadrillion: Quadrillion
 
-	datetime:
-		distance_in_words:
-			half_a_minute: "half a minute"
-			less_than_x_seconds:
-				one: "less than 1 second"
-				other: "less than %{count} seconds"
-			x_seconds:
-				one: "1 second"
-				other: "%{count} seconds"
-			less_than_x_minutes:
-				one: "less than a minute"
-				other: "less than %{count} minutes"
-			x_minutes:
-				one: "1 minute"
-				other: "%{count} minutes"
-			about_x_hours:
-				one: "about 1 hour"
-				other: "about %{count} hours"
-			x_days:
-				one: "1 day"
-				other: "%{count} days"
-			about_x_months:
-				one: "about 1 month"
-				other: "about %{count} months"
-			x_months:
-				one: "1 month"
-				other: "%{count} months"
-			about_x_years:
-				one: "about 1 year"
-				other: "about %{count} years"
-			over_x_years:
-				one: "over 1 year"
-				other: "over %{count} years"
-			almost_x_years:
-				one: "almost 1 year"
-				other: "almost %{count} years"
-		prompts:
-			year: "Year"
-			month: "Month"
-			day: "Day"
-			hour: "Hour"
-			minute: "Minute"
-			second: "Seconds"
+    datetime:
+        distance_in_words:
+            half_a_minute: "half a minute"
+            less_than_x_seconds:
+                one: "less than 1 second"
+                other: "less than %{count} seconds"
+            x_seconds:
+                one: "1 second"
+                other: "%{count} seconds"
+            less_than_x_minutes:
+                one: "less than a minute"
+                other: "less than %{count} minutes"
+            x_minutes:
+                one: "1 minute"
+                other: "%{count} minutes"
+            about_x_hours:
+                one: "about 1 hour"
+                other: "about %{count} hours"
+            x_days:
+                one: "1 day"
+                other: "%{count} days"
+            about_x_months:
+                one: "about 1 month"
+                other: "about %{count} months"
+            x_months:
+                one: "1 month"
+                other: "%{count} months"
+            about_x_years:
+                one: "about 1 year"
+                other: "about %{count} years"
+            over_x_years:
+                one: "over 1 year"
+                other: "over %{count} years"
+            almost_x_years:
+                one: "almost 1 year"
+                other: "almost %{count} years"
+        prompts:
+            year: "Year"
+            month: "Month"
+            day: "Day"
+            hour: "Hour"
+            minute: "Minute"
+            second: "Seconds"
 
-	helpers:
-		select:
-			prompt: "Please select"
+    helpers:
+        select:
+            prompt: "Please select"
 
-		submit:
-			create: 'Create %{model}'
-			update: 'Update %{model}'
-			submit: 'Save %{model}'
+        submit:
+            create: 'Create %{model}'
+            update: 'Update %{model}'
+            submit: 'Save %{model}'
 
-	errors:
-		format: "%{attribute} %{message}"
+    errors:
+        format: "%{attribute} %{message}"
 
-		messages: &errors_messages
-			inclusion: "is not included in the list"
-			exclusion: "is reserved"
-			invalid: "is invalid"
-			confirmation: "doesn't match confirmation"
-			accepted: "must be accepted"
-			empty: "can't be empty"
-			blank: "can't be blank"
-			too_long: "is too long (maximum is %{count} characters)"
-			too_short: "is too short (minimum is %{count} characters)"
-			wrong_length: "is the wrong length (should be %{count} characters)"
-			not_a_number: "is not a number"
-			not_an_integer: "must be an integer"
-			greater_than: "must be greater than %{count}"
-			greater_than_or_equal_to: "must be greater than or equal to %{count}"
-			equal_to: "must be equal to %{count}"
-			less_than: "must be less than %{count}"
-			less_than_or_equal_to: "must be less than or equal to %{count}"
-			odd: "must be odd"
-			even: "must be even"
+        messages: &errors_messages
+            inclusion: "is not included in the list"
+            exclusion: "is reserved"
+            invalid: "is invalid"
+            confirmation: "doesn't match confirmation"
+            accepted: "must be accepted"
+            empty: "can't be empty"
+            blank: "can't be blank"
+            too_long: "is too long (maximum is %{count} characters)"
+            too_short: "is too short (minimum is %{count} characters)"
+            wrong_length: "is the wrong length (should be %{count} characters)"
+            not_a_number: "is not a number"
+            not_an_integer: "must be an integer"
+            greater_than: "must be greater than %{count}"
+            greater_than_or_equal_to: "must be greater than or equal to %{count}"
+            equal_to: "must be equal to %{count}"
+            less_than: "must be less than %{count}"
+            less_than_or_equal_to: "must be less than or equal to %{count}"
+            odd: "must be odd"
+            even: "must be even"
 
-	activerecord:
-		errors:
-			template:
-				header:
-					one: "1 error prohibited this %{model} from being saved"
-					other: "%{count} errors prohibited this %{model} from being saved"
-				body: "There were problems with the following fields:"
+    activerecord:
+        errors:
+            template:
+                header:
+                    one: "1 error prohibited this %{model} from being saved"
+                    other: "%{count} errors prohibited this %{model} from being saved"
+                body: "There were problems with the following fields:"
 
-			messages:
-				taken: "has already been taken"
-				record_invalid: "Validation failed: %{errors}"
-				<<: *errors_messages
+            messages:
+                taken: "has already been taken"
+                record_invalid: "Validation failed: %{errors}"
+                <<: *errors_messages
 
-			full_messages:
-				format: "%{attribute} %{message}"
+            full_messages:
+                format: "%{attribute} %{message}"
 
-		models:
-			beer: Beer
-			category: Category
-			clientele: Clientele
-			country: Country
-			establishment: Establishment
-			hour: Hour
-			hygiene: Hygiene
-			rating: Rating
-			reviewer: Reviewer
-			review: Review
-			sort: Sort
-			sound_level: Sound Level
+        models:
+            beer: Beer
+            category: Category
+            clientele: Clientele
+            country: Country
+            establishment: Establishment
+            hour: Hour
+            hygiene: Hygiene
+            rating: Rating
+            reviewer: Reviewer
+            review: Review
+            sort: Sort
+            sound_level: Sound Level
 
-		attributes:
-			beer:
-				name: Name
-				sort_id: Sort
-				country_id: Country
+        attributes:
+            beer:
+                name: Name
+                sort_id: Sort
+                country_id: Country
 
-			category:
-				name: Name
+            category:
+                name: Name
 
-			clientele:
-				name: Name
+            clientele:
+                name: Name
 
-			country:
-				name: Name
+            country:
+                name: Name
 
-			establishment:
-				name: Name
-				locale: Locale
-				city: City
-				wardrobe_fee: Wardrobe Fee
-				entrence_fee: Entrence Fee
-				entrence_fee_start: Entrence Fee Start
-				comment: Comment
-				age_limit: Age Limit
-				category: Category
-				tapped_beer_id: Tapped Beer
-				bottled_beer_id: Bottled Beer
-				tapped_beer_price: Tapped Beer Price
-				bottled_beer_price: Beer Beer Price
-				opening_hour_id: Opening Hour
-				closing_hour_id: Closing Hour
+            establishment:
+                name: Name
+                locale: Locale
+                city: City
+                wardrobe_fee: Wardrobe Fee
+                entrence_fee: Entrence Fee
+                entrence_fee_start: Entrence Fee Start
+                comment: Comment
+                age_limit: Age Limit
+                category: Category
+                tapped_beer_id: Tapped Beer
+                bottled_beer_id: Bottled Beer
+                tapped_beer_price: Tapped Beer Price
+                bottled_beer_price: Beer Beer Price
+                opening_hour_id: Opening Hour
+                closing_hour_id: Closing Hour
 
-			hour:
-				monday: Monday
-				tuesday: Tuesday
-				wednesday: Wednesday
-				thursday: Thursday
-				friday: Friday
-				saturday: Saturday
-				sunday: Sunday
+            hour:
+                monday: Monday
+                tuesday: Tuesday
+                wednesday: Wednesday
+                thursday: Thursday
+                friday: Friday
+                saturday: Saturday
+                sunday: Sunday
 
-			hygiene:
-				name: Name
+            hygiene:
+                name: Name
 
-			person:
-				first_name: First Name
-				last_name: Last Name
-				alias: Alias
+            person:
+                first_name: First Name
+                last_name: Last Name
+                alias: Alias
 
-			rating:
-				value: Value
+            rating:
+                value: Value
 
-			reviewer:
-				person_id: Person
-				review_id: Review
+            reviewer:
+                person_id: Person
+                review_id: Review
 
-			review:
-				visit_date: Visit Date
-				comment: Comment
-				establishment: Establishment
-				category_id: Category
-				clientele_id: Clientele
-				sound_level_id: Sound Level
-				hygiene_id: Hygiene
-				rating_id: Rating
+            review:
+                visit_date: Visit Date
+                comment: Comment
+                establishment: Establishment
+                category_id: Category
+                clientele_id: Clientele
+                sound_level_id: Sound Level
+                hygiene_id: Hygiene
+                rating_id: Rating
 
-			sort:
-				name: Name
+            sort:
+                name: Name
 
-			sound_level:
-				name: Name
+            sound_level:
+                name: Name
