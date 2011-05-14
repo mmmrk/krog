@@ -1,0 +1,19 @@
+%h1 Listing sorts
+
+%table
+	%tr
+		%th Name
+		%th
+		%th
+		%th
+
+- @sorts.each do |sort|
+	%tr
+		%td= sort.name
+		%td= link_to 'Show', sort
+		%td= link_to 'Edit', edit_sort_path(sort)
+		%td= link_to 'Destroy', sort, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Sort', new_sort_path

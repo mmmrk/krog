@@ -1,0 +1,13 @@
+%p#notice= notice
+
+%p
+	%b Person:
+	= @reviewer.person
+	
+%p
+	%b Review:
+	= @reviewer.review
+
+= link_to 'Edit', edit_reviewer_path(@reviewer)
+|
+= link_to 'Back', reviewers_path

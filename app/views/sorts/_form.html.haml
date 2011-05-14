@@ -1,0 +1,15 @@
+= form_for(@sort) do |f|
+	- if @sort.errors.any?
+		#error_explanation
+			%h2 #{ pluralize(@sort.errors.count, "error") } prohibited this sort from being saved:
+			%ul
+				- @sort.errors.full_messages.each do |msg|
+				%li= msg
+
+	.field
+		= f.label :name
+		%br
+		= f.text_field :name
+
+	.actions
+		= f.submit

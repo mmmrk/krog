@@ -1,0 +1,20 @@
+= form_for(@reviewer) do |f|
+	- if @reviewer.errors.any?
+		#error_explanation
+			%h2 #{ pluralize(@reviewer.errors.count, "error") } prohibited this reviewer from being saved:
+			%ul
+				- @reviewer.errors.full_messages.each do |msg|
+					%li= msg
+
+	.field
+		= f.label :person
+		%br
+		= f.text_field :person
+	
+	.field
+		= f.label :review
+		%br
+		= f.text_field :review
+	
+	.actions
+		= f.submit

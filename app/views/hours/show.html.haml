@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+	%b Monday:
+	= @hour.monday
+%p
+	%b Tuesday:
+	= @hour.tuesday
+%p
+	%b Wednseday:
+	= @hour.wednseday
+%p
+	%b Thursday:
+	= @hour.thursday
+%p
+	%b Friday:
+	= @hour.friday
+%p
+	%b Saturday:
+	= @hour.saturday
+%p
+	%b Sunday:
+	= @hour.sunday
+
+= link_to 'Edit', edit_hour_path(@hour)
+|
+= link_to 'Back', hours_path

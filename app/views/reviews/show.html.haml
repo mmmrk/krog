@@ -1,0 +1,37 @@
+﻿%p#notice= notice
+
+%p 
+	%b Rating:
+	= @review.rating.value
+
+%p 
+	%b Visit date:
+	= @review.visit_date
+
+%p 
+	%b Comment:
+	= @review.comment
+
+%p 
+	%b Establishment:
+	= @review.establishment.name
+
+%p 
+	%b Category:
+	= @review.category.name
+
+%p 
+	%b Clientele:
+	= @review.clientele.name
+
+%p 
+	%b Sound level:
+	= @review.sound_level.name
+
+%p 
+	%b Hygiene:
+	= @review.hygiene.name
+
+= link_to 'Edit', edit_review_path(@review)
+|
+= link_to 'Back', reviews_path

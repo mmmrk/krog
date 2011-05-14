@@ -1,0 +1,19 @@
+%h1 Listing clienteles
+
+%table
+	%tr
+		%th Name
+		%th
+		%th
+		%th
+
+- @clienteles.each do |clientele|
+	%tr 
+		%td= clientele.name
+		%td= link_to 'Show', clientele
+		%td= link_to 'Edit', edit_clientele_path(clientele)
+		%td= link_to 'Destroy', clientele, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Clientele', new_clientele_path

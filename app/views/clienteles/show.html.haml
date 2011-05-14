@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p 
+	%b Name:
+	= @clientele.name
+
+= link_to 'Edit', edit_clientele_path(@clientele)
+|
+= link_to 'Back', clienteles_path
