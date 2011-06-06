@@ -10,16 +10,17 @@ class EstablishmentsController extends ApplicationController
 	  		$(".week_fields").show()
 	  		false
 
-		init_hour_events "opening_hour_weekday", "opening_hour_weekend", "closing_hour_weekday", "closing_hour_weekend"
-		#init_hour_events "closing_hour_weekday"
+		init_hour_events()
 
 	init_hour_events = (names...) ->
-		for name in names
-			$("##{name}_4i").change ->
-				$(".#{name}").val($(this).val())
+		$("#opening_hour_weekday_4i").change -> $(".opening_hour_weekday").val($(this).val())
+		$("#opening_hour_weekend_4i").change -> $(".opening_hour_weekend").val($(this).val())
+		$("#closing_hour_weekday_4i").change -> $(".closing_hour_weekday").val($(this).val())
+		$("#closing_hour_weekend_4i").change -> $(".closing_hour_weekend").val($(this).val())
 
-			$("##{name}_5i").change ->
-				console.log 2
-				$(".#{name}").next().val($(this).val())
+		$("#opening_hour_weekday_5i").change -> $(".opening_hour_weekday").next().val($(this).val())
+		$("#opening_hour_weekend_5i").change -> $(".opening_hour_weekend").next().val($(this).val())
+		$("#closing_hour_weekday_5i").change -> $(".closing_hour_weekday").next().val($(this).val())
+		$("#closing_hour_weekend_5i").change -> $(".closing_hour_weekend").next().val($(this).val())
 
 $ -> (new EstablishmentsController).init_events()
