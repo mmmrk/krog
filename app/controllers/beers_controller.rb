@@ -25,11 +25,6 @@ class BeersController < ApplicationController
 	# GET /beers/new.xml
 	def new
 		@beer = Beer.new
-		@beer.country = Country.new
-		@beer.sort = Sort.new
-		
-		@countries = Country.all
-		@sorts = Sort.all
 
 		respond_to do |format|
 			format.html # new.html.erb
@@ -46,8 +41,6 @@ class BeersController < ApplicationController
 	# POST /beers.xml
 	def create
 		@beer = Beer.new(params[:beer])
-		@beer.sort = Sort.find(params[:sort])
-		@beer.country = Country.find(params[:country])
 
 		respond_to do |format|
 			if @beer.save
