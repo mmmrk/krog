@@ -72,6 +72,8 @@ GEM
       activesupport (= 3.1.0.beta1)
       bundler (~> 1.0)
       railties (= 3.1.0.beta1)
+    rails-footnotes (3.7.4)
+      rails (>= 3.0.0)
     railties (3.1.0.beta1)
       actionpack (= 3.1.0.beta1)
       activesupport (= 3.1.0.beta1)
@@ -104,6 +106,7 @@ DEPENDENCIES
   haml
   jquery-rails
   rails (= 3.1.0.beta1)
+  rails-footnotes (~> 3.7.4)
   sass
   sqlite3
   turn

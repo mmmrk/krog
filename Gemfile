@@ -15,6 +15,7 @@ gem 'uglifier'
 gem 'haml'
 
 gem 'jquery-rails'
+gem "rails-footnotes", "~> 3.7.4", :group => :development
 
 # Use unicorn as the web server
 # gem 'unicorn'
