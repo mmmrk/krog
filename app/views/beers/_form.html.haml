@@ -1,25 +1,5 @@
-= form_for(@beer) do |f|
-	- if @beer.errors.any?
-		#error_explanation
-			%h2 #{ pluralize(@beer.errors.count, "error")} prohibited this beer from being saved:
-			%ul
-				- @beer.errors.full_messages.each do |msg|
-					%li= msg
-
-	.field
-		= f.label :name
-		%br
-		= f.text_field :name
-
-	.field
-		= f.label :sort
-		%br
-		= select_tag :sort, options_from_collection_for_select(@sorts, "id", "name")
-
-	.field
-		= f.label :country
-		%br
-		= select_tag :country, options_from_collection_for_select(@countries, "id", "name")
-
-	.actions
-		= f.submit
+= simple_form_for @beer do |f|
+	= f.input :name
+	= f.association :sort, :include_blank => false
+	= f.association :country, :include_blank => false
+	= f.button :submit
