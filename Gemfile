@@ -16,6 +16,7 @@ gem 'haml'
 
 gem 'jquery-rails'
 gem "rails-footnotes", "~> 3.7.4", :group => :development
+gem "simple_form", "~> 1.4.0"
 
 # Use unicorn as the web server
 # gem 'unicorn'
